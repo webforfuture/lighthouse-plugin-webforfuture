@@ -1,0 +1,16 @@
+lighthouse --chrome-flags="--no-sandbox" http://localhost:1313
+
+INBOX
+x lighthouse Starten
+x lighthouse mit plugin starten
+	npm install lighthouse lighthouse-plugin-field-performance
+	lighthouse https://google.com/ --plugins=lighthouse-plugin-field-performance --view --chrome-flags="--no-sandbox"
+- eigenes plugin erstellen
+	npm publish vermutlich... ist grad nicht so wichtig
+x lighthouse mit eigenem Plugin lokal laufen lassen
+	in den odrner über dem plugin-ordner gehen 
+	NODE_PATH=.. lighthouse https://google.com --plugin=lighthouse-plugin-webforfuture --view --chrome-flags="--no-sandbox"
+x MB zahl aus der analyse von LH lesen
+	Ist das nicht so ähnlich wie ein Budget? Schon... aber die Budgets sind glaub ich nicht so sichtbar?
+	https://web.dev/use-lighthouse-for-performance-budgets/
+- Testen wie "sichtbar" budgets sind.
