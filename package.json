@@ -7,7 +7,6 @@
 		"lighthouse": "^7.3.0"
 	},
 	"devDependencies": {
-		"@lhci/cli": "^0.7.1",
 		"lighthouse": "^7.3.0"
 	}
 }
