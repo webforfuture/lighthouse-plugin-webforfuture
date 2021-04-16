@@ -3,7 +3,7 @@
  /** @type {LH.Config.Plugin} */
  module.exports = {
    audits: [{
-	 path: 'lighthouse-plugin-example/audits/preload-as.js',
+	 path: 'lighthouse-plugin-webforfuture/audits/preload-as.js',
    }],
  
    category: {
