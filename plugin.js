@@ -8,7 +8,7 @@
  
    category: {
 	 title: 'Web For Future',
-	 description: 'work in progress',
+	 description: 'Checking websites for sustainability criteria.',
 	 auditRefs: [
 	   {id: 'PageSizeOverAverageAudit', weight: 1},
 	 ],

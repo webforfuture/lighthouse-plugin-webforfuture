@@ -5,11 +5,11 @@ const { Audit, NetworkRecords } = require('lighthouse');
 class PageSizeOverAverageAudit extends Audit {
 static get meta() {
 	return {
-	id: 'PageSizeOverAverageAudit',
-	title: 'page size is below average of 2MB',
-	failureTitle: 'page size is above average of 2MB',
-	description: 'Checks if the tested page exeeds the average of 2MB',
-	requiredArtifacts: ['devtoolsLogs'],
+		id: 'PageSizeOverAverageAudit',
+		title: 'Page size is below average of 2MB.',
+		failureTitle: 'Page size is above average of 2MB.',
+		description: 'The average website is 2MB large. If we can keep all our websites below that threshold page sizes will decrease over time.',
+		requiredArtifacts: ['devtoolsLogs'],
 	};
 }
 
