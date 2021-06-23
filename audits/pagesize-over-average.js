@@ -17,19 +17,15 @@ static async audit(artifacts, context) {
 	const devtoolsLog = artifacts.devtoolsLogs[Audit.DEFAULT_PASS];
 	const requests = await NetworkRecords.request(devtoolsLog, context);
 
-	let totalTransferSize = 0;
-	requests.forEach(req => {
-		totalTransferSize += req.transferSize;
-	})
-	let score = 1
+	let totalTransferSizeInMB = requests
+		.map(request => request.transferSize)
+		.reduce((prevValue, curValue) => prevValue + curValue) /1024/1024;
 
-	if (totalTransferSize > 2 * 1024 * 1024) {
-		score = 0
-	}
+	let score = (totalTransferSizeInMB <= 2) ? 1 : 0
 
 	return {
 		score: score,
-		displayValue: requests.length + ' requests transfered '  + totalTransferSize/1024/1024 + 'MB.',
+		displayValue: requests.length + ' requests transfered a total of '  + Math.round(totalTransferSizeInMB*100)/100 + ' MB.',
 	};
 }
 }
