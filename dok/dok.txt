@@ -14,3 +14,6 @@ x MB zahl aus der analyse von LH lesen
 	Ist das nicht so ähnlich wie ein Budget? Schon... aber die Budgets sind glaub ich nicht so sichtbar?
 	https://web.dev/use-lighthouse-for-performance-budgets/
 - Testen wie "sichtbar" budgets sind.
+
+Anleitung:
+https://engineering.q42.nl/making-a-lighthouse-plugin-work-with-lighthouse-ci/
