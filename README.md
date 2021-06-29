@@ -17,7 +17,7 @@ This plugin allows me to check this for every website that I have and display it
 
 ## Usage
 
-    > npm install lighthouse-plugin-webforfuture
+    > npm install lighthouse lighthouse-plugin-webforfuture
 
     > lighthouse https://webforfuture.org \
       --plugins=lighthouse-plugin-webforfuture \
